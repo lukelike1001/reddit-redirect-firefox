@@ -3,7 +3,6 @@
     "name": "Reddit Redirect",
     "version": "1.0",
     "permissions": [
-      "activeTab",
       "webNavigation"
     ],
     "background": {
