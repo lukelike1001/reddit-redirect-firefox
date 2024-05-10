@@ -1,4 +1,4 @@
-chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
+browser.webNavigation.onBeforeNavigate.addListener(async (details) => {
 
     // Access the current URL, along with its pathname
     const { url } = details;
