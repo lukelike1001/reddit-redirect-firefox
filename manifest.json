@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Reddit Redirect",
     "version": "1.0",
     "permissions": [
@@ -9,14 +9,13 @@
     "background": {
       "scripts": ["background.js"]
     },
-    "action": {
+    "browser_action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
     },
     "browser_specific_settings": {
       "gecko": {
-        "id": "reddit-redirect-firefox@example.org",
-        "strict_min_version": "109.0"
+        "id": "reddit-redirect-firefox@example.org"
       }
     }    
 }
