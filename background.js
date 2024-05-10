@@ -3,11 +3,11 @@ browser.webNavigation.onBeforeNavigate.addListener(async (details) => {
     // Access the current URL, along with its pathname
     const { url } = details;
     const pathname = new URL(url).pathname;
-    console.log("Currently at: ", url);
+    // console.log("Currently at: ", url);
     
-    // Only redirect if the URL starts with "https://www.reddit.com" and isn't an SSO requests
+    // Only redirect if the URL starts with "https://www.reddit.com" and isn't an SSO request
     if (url.startsWith("https://www.reddit.com") && !pathname.includes("account/sso/")) {
-        console.log("Confirmed redirect!\n");
+        // console.log("Confirmed redirect!\n");
 
         setTimeout(() => {
             // Modify the URL to redirect to "https://new.reddit.com/"
